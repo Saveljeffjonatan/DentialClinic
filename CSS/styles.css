@@ -18,12 +18,12 @@ body {
 	font-weight: 400;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;
-	font-size: 18px;
+	font-size: 1rem;
 	color: #626262;
 }
 
 .container {
-	width: 100vh;
+	width: 100%;
 	padding: 0 1rem;
 	margin: 0 auto;
 }
@@ -37,6 +37,15 @@ a:hover {
 	color: #25e6c8;
 }
 
+.navbar {
+	margin: 1.2rem 0;
+	padding: 0.5rem;
+}
+
+.collapse {
+	display: none;
+}
+
 /** End of help classes */
 
 /*! Beginning of Specific class changes */
@@ -46,23 +55,79 @@ a:hover {
 	padding: 0.5rem;
 }
 
+.navbar-nav {
+	display: flex;
+	flex-direction: column;
+}
+
 .navbar-top .container,
 .navbar .container {
 	display: flex;
 	justify-content: space-between;
 }
 
-.navbar-top .container .openTime i {
-	margin-right: 0.5rem;
+.navbar .container {
+	align-items: center;
+}
+
+.navbar-top .container .open-time i {
+	color: #2baaec;
+	margin-right: 0.25rem;
 	font-size: 1.2rem;
 }
 
-.navbar-top .container .socialMedia a {
+.navbar-top .container .social-media a {
 	margin: 0 0.5rem;
 }
 
 .navbar-nav a {
 	color: #000;
+	padding: 0 0.8rem;
+}
+
+.navbar-mobile {
+	font-size: 2.5rem;
+	color: #2baaec;
+	background-color: transparent;
+	border: 1px solid transparent;
 }
 
 /*! End of specific class changes */
+
+/*! Start of specific id /to/ class changes */
+
+/*! End of specific id /to/ class changes */
+
+/*? Start of mediaqueries */
+
+@media (min-width: 768px) {
+	.navbar-nav {
+		flex-direction: row;
+	}
+	.nav-link {
+		padding: 0 0.5rem;
+	}
+	.collapse:not(.show) {
+		display: flex;
+	}
+	.navbar-mobile {
+		display: none;
+	}
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+/*? End of mediaqueries */
