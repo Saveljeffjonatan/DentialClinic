@@ -41,6 +41,16 @@ h1 {
 	/*! Font-size changed to 48px "was 60 in design" to look better on screens.*/
 }
 
+.btn {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.75rem 2.5rem;
+	border-radius: 0.5rem;
+}
+
 .container {
 	width: 100%;
 	padding: 0 1rem;
@@ -60,6 +70,7 @@ h1 {
 /** End of help classes */
 
 /*! Beginning of Specific class changes */
+/** Top menu below this line */
 
 .top-menu {
 	border-bottom: 1px solid #707070;
@@ -76,7 +87,7 @@ h1 {
 	margin: 0 0.5rem;
 }
 
-/** Top menu above this line */
+/** Main menu below this line */
 
 .main-menu {
 	margin: 1.2rem 0;
@@ -104,11 +115,21 @@ h1 {
 	border: 1px solid transparent;
 }
 
-/** Main menu above this line */
+.btn-primary {
+	color: #fff;
+	background-color: #25e6c8;
+	font-weight: bold;
+}
+
+.btn-primary:hover {
+	background-color: #2baaec;
+}
 
 /*! End of specific class changes */
 
 /*! Start of specific id /to/ class changes */
+
+/** Showcase starts here */
 
 #showcase {
 	background: #dedede;
@@ -121,13 +142,28 @@ h1 {
 
 #showcase .container img {
 	height: 500px;
-	margin-top: 1rem;
+	margin: 1rem;
 }
 
 #showcase .container .content {
 	align-self: center;
 	margin-left: 4rem;
 }
+
+#showcase .container .content h1 {
+	color: #363636;
+	font-family: 'Roboto Slab', serif;
+	font-size: 3rem;
+	font-weight: 400;
+	line-height: 1.1;
+}
+
+#showcase .container .content p {
+	font-size: 0.9rem;
+	margin: 2.5rem 0;
+}
+
+/** Showcase ends here */
 
 /*! End of specific id /to/ class changes */
 
