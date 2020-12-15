@@ -1,7 +1,7 @@
 /*
-TODO: Skapa hjälpklasser, mediaqueries.
 TODO: Visa lärare och klassen https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 /** font-family: 'Roboto Slab', serif; */
 
@@ -19,13 +19,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;
 	font-size: 1rem;
+	/*! Standard browser font-size = 16px (rem = standard font-size * number before rem) */
 	color: #626262;
-}
-
-.container {
-	width: 100%;
-	padding: 0 1rem;
-	margin: 0 auto;
 }
 
 a {
@@ -37,82 +32,124 @@ a:hover {
 	color: #25e6c8;
 }
 
-.navbar {
-	margin: 1.2rem 0;
-	padding: 0.5rem;
+p {
+	font-size: 1.125rem;
+}
+
+h1 {
+	font-size: 3rem;
+	/*! Font-size changed to 48px "was 60 in design" to look better on screens.*/
+}
+
+.container {
+	width: 100%;
+	padding: 0 1rem;
+	margin: 0 auto;
 }
 
 .collapse {
 	display: none;
 }
 
-/** End of help classes */
-
-/*! Beginning of Specific class changes */
-
-.navbar-top {
-	border-bottom: 1px solid #707070;
-	padding: 0.5rem;
-}
-
-.navbar-nav {
-	display: flex;
-	flex-direction: column;
-}
-
-.navbar-top .container,
-.navbar .container {
+.top-menu .container,
+.main-menu .container {
 	display: flex;
 	justify-content: space-between;
 }
 
-.navbar .container {
-	align-items: center;
+/** End of help classes */
+
+/*! Beginning of Specific class changes */
+
+.top-menu {
+	border-bottom: 1px solid #707070;
+	padding: 0.5rem;
 }
 
-.navbar-top .container .open-time i {
+.top-menu .container .open-time i {
 	color: #2baaec;
 	margin-right: 0.25rem;
 	font-size: 1.2rem;
 }
 
-.navbar-top .container .social-media a {
+.top-menu .container .social-media a {
 	margin: 0 0.5rem;
 }
 
-.navbar-nav a {
-	color: #000;
+/** Top menu above this line */
+
+.main-menu {
+	margin: 1.2rem 0;
+	padding: 0.5rem;
+}
+
+.main-menu-nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-menu .container {
+	align-items: center;
+}
+
+.main-menu-nav a {
+	color: #363636;
 	padding: 0 0.8rem;
 }
 
-.navbar-mobile {
+.main-menu-mobile {
 	font-size: 2.5rem;
 	color: #2baaec;
 	background-color: transparent;
 	border: 1px solid transparent;
 }
 
+/** Main menu above this line */
+
 /*! End of specific class changes */
 
 /*! Start of specific id /to/ class changes */
+
+#showcase {
+	background: #dedede;
+}
+
+#showcase .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#showcase .container img {
+	height: 500px;
+	margin-top: 1rem;
+}
+
+#showcase .container .content {
+	align-self: center;
+	margin-left: 4rem;
+}
 
 /*! End of specific id /to/ class changes */
 
 /*? Start of mediaqueries */
 
 @media (min-width: 768px) {
-	.navbar-nav {
+	.main-menu-nav {
 		flex-direction: row;
 	}
-	.nav-link {
+
+	.main-menu-link {
 		padding: 0 0.5rem;
 	}
+
 	.collapse:not(.show) {
 		display: flex;
 	}
-	.navbar-mobile {
+
+	.main-menu-mobile {
 		display: none;
 	}
+
 	.container {
 		max-width: 720px;
 	}
