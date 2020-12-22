@@ -1,6 +1,8 @@
 /*
 TODO: Kolla så all befintlig design är rätt i storlek med desing skissen.
 TODO: Logo ska vara klick bar och reloada till hem.
+TODO: Bild i Showcase ska bli lite mindre vid @media 992px | göra knappen lite större?
+TODO: Fråga Joakim om "h2, :is(article, aside, nav, section) h1 {" - Varför stylas den som en h2?
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
@@ -38,11 +40,19 @@ a:hover {
 
 p {
 	font-size: 1.125rem;
+	color: #363636;
 }
 
 h1 {
-	font-size: 3rem;
-	/*! Font-size changed to 48px "was 60 in design" to look better on screens.*/
+	font-family: 'Roboto Slab', serif;
+	color: #363636;
+	font-weight: 400;
+}
+
+img {
+	height: 550px;
+	margin: 1rem 0 0;
+	display: none;
 }
 
 .btn {
@@ -66,7 +76,8 @@ h1 {
 }
 
 .top-menu .container,
-.main-menu .container {
+.main-menu .container,
+#about-us .container {
 	display: flex;
 	justify-content: space-between;
 }
@@ -75,6 +86,14 @@ h1 {
 
 /*! Beginning of Specific class changes */
 /** Top menu below this line */
+.test {
+	display: flex;
+	justify-content: space-between;
+}
+
+.blue {
+	color: #2baaec;
+}
 
 .top-menu {
 	border-bottom: 1px solid #707070;
@@ -96,6 +115,11 @@ h1 {
 .main-menu {
 	margin: 1.2rem 0;
 	padding: 0.5rem;
+}
+
+.main-menu .logo img {
+	display: flex;
+	height: 100%;
 }
 
 .main-menu-nav {
@@ -146,31 +170,54 @@ h1 {
 	justify-content: space-between;
 }
 
-#showcase .container img {
-	height: 550px;
-	margin: 1rem 0 0;
-	display: none;
-}
-
 #showcase .container .content {
 	align-self: center;
 	margin-left: 3rem;
 }
 
 #showcase .container .content h1 {
-	color: #363636;
-	font-family: 'Roboto Slab', serif;
-	font-size: 3rem;
-	font-weight: 400;
 	line-height: 1.1;
 	margin-top: 0.4rem;
+	/*! Deviated from the design by -10px.  */
+	font-size: 3.125rem;
 }
 
 #showcase .container .content p {
 	margin: 1.5rem 0;
 }
-
 /** Showcase ends here */
+
+/** About-us starts here */
+
+#about-us .container .content h1 {
+	/*! Deviated from the design by -10px.  */
+	font-size: 1.875rem;
+}
+
+#about-us .container .content {
+	margin: 4rem 2rem 0;
+}
+
+#about-us .container img {
+	margin: 1rem;
+}
+#about-us .container .content .info-count h1 {
+	font-size: 1.875rem;
+	color: #2baaec;
+}
+#about-us .container .content .test .info-count {
+	width: 72%;
+}
+/** About-us ends here */
+
+/*! REMOVE THIS LATER WHEN STARTING services. */
+#services {
+	background: #f7f7f7;
+	padding-top: 30px;
+}
+
+#services .container .content h1 {
+}
 
 /*! End of specific id /to/ class changes */
 
@@ -203,17 +250,9 @@ h1 {
 		max-width: 960px;
 	}
 
-	p {
-		font-size: 1.2rem;
-	}
-
-	#showcase .container img {
+	#showcase .container img,
+	#about-us .container img {
 		display: flex;
-	}
-
-	#showcase .container .content h1 {
-		font-size: 2.35rem;
-		font-weight: 500;
 	}
 
 	#showcase .container .content p {
@@ -226,7 +265,8 @@ h1 {
 		max-width: 1140px;
 	}
 
-	#showcase .container img {
+	#showcase .container img,
+	#about-us .container img {
 		display: flex;
 	}
 
