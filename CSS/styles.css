@@ -1,7 +1,7 @@
 /*
 TODO: Kolla så all befintlig design är rätt i storlek med desing skissen.
 TODO: Logo ska vara klick bar och reloada till hem.
-TODO: Bild i Showcase ska bli lite mindre vid @media 992px | göra knappen lite större?
+TODO: Ändra #about-us .container .content (.test - till ett bättre namn).
 TODO: Fråga Joakim om "h2, :is(article, aside, nav, section) h1 {" - Varför stylas den som en h2?
 */
 
@@ -170,11 +170,6 @@ img {
 	justify-content: space-between;
 }
 
-#showcase .container .content {
-	align-self: center;
-	margin-left: 3rem;
-}
-
 #showcase .container .content h1 {
 	line-height: 1.1;
 	margin-top: 0.4rem;
@@ -189,34 +184,30 @@ img {
 
 /** About-us starts here */
 
+#about-us .container .content {
+	margin: 6rem 0;
+}
+
+#about-us .container img {
+	margin-top: auto;
+}
+
 #about-us .container .content h1 {
 	/*! Deviated from the design by -10px.  */
 	font-size: 1.875rem;
 }
 
-#about-us .container .content {
-	margin: 4rem 2rem 0;
-}
-
-#about-us .container img {
-	margin: 1rem;
-}
 #about-us .container .content .info-count h1 {
 	font-size: 1.875rem;
 	color: #2baaec;
 }
-#about-us .container .content .test .info-count {
-	width: 72%;
-}
+
 /** About-us ends here */
 
 /*! REMOVE THIS LATER WHEN STARTING services. */
 #services {
-	background: #f7f7f7;
+	background: #000;
 	padding-top: 30px;
-}
-
-#services .container .content h1 {
 }
 
 /*! End of specific id /to/ class changes */
@@ -250,13 +241,30 @@ img {
 		max-width: 960px;
 	}
 
-	#showcase .container img,
-	#about-us .container img {
+	#showcase .container img {
 		display: flex;
+		height: 425px;
+	}
+
+	#showcase .container .content {
+		align-self: center;
+		margin: 3rem 0 0 6rem;
+	}
+
+	#showcase .container .content h1 {
+		font-size: 2.25rem;
 	}
 
 	#showcase .container .content p {
 		margin: 2.5rem 0;
+	}
+
+	#about-us .container img {
+		display: none;
+	}
+
+	#about-us .container .content .test .info-count {
+		width: 85%;
 	}
 }
 
@@ -270,8 +278,24 @@ img {
 		display: flex;
 	}
 
+	#showcase .container .content {
+		align-self: center;
+		margin: 3rem 0 0 6rem;
+	}
+
 	#showcase .container .content p {
 		margin: 2.5rem 0;
+	}
+
+	#about-us .container img {
+		height: 620px;
+		margin-left: 6rem;
+	}
+
+	#about-us .container .content .green-line {
+		height: 0.25rem;
+		margin: 1rem 0 1.5rem;
+		background-color: #25e6c8;
 	}
 }
 
