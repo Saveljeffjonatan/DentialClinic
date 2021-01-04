@@ -3,6 +3,7 @@ TODO: Kolla så all befintlig design är rätt i storlek med desing skissen.
 TODO: Logo ska vara klick bar och reloada till hem.
 TODO: Ändra #about-us .container .content (.test - till ett bättre namn).
 TODO: Fråga Joakim om "h2, :is(article, aside, nav, section) h1 {" - Varför stylas den som en h2?
+TODO: Margin top hela container på about-us.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
@@ -86,7 +87,7 @@ img {
 
 /*! Beginning of Specific class changes */
 /** Top menu below this line */
-.test {
+.info {
 	display: flex;
 	justify-content: space-between;
 }
@@ -113,7 +114,7 @@ img {
 /** Main menu below this line */
 
 .main-menu {
-	margin: 1.2rem 0;
+	margin: 0.5rem 0;
 	padding: 0.5rem;
 }
 
@@ -155,6 +156,12 @@ img {
 	background-color: #2baaec;
 }
 
+/** about-us below this line */
+
+.patients {
+	display: none;
+}
+
 /*! End of specific class changes */
 
 /*! Start of specific id /to/ class changes */
@@ -168,6 +175,10 @@ img {
 #showcase .container {
 	display: flex;
 	justify-content: space-between;
+}
+
+#showcase .container .content {
+	margin: 1rem 0;
 }
 
 #showcase .container .content h1 {
@@ -185,7 +196,7 @@ img {
 /** About-us starts here */
 
 #about-us .container .content {
-	margin: 6rem 0;
+	margin: 1.5rem 0;
 }
 
 #about-us .container img {
@@ -235,6 +246,10 @@ img {
 		max-width: 720px;
 	}
 
+	.patients {
+		display: block;
+	}
+
 	#showcase .container .content {
 		margin: 1.25rem 0 1rem;
 	}
@@ -271,7 +286,7 @@ img {
 		display: none;
 	}
 
-	#about-us .container .content .test .info-count {
+	#about-us .container .content .info .info-count {
 		width: 85%;
 	}
 
@@ -304,9 +319,17 @@ img {
 		font-weight: normal;
 	}
 
+	#about-us .container {
+		margin-top: 3rem;
+	}
+
+	#about-us .container .content {
+		margin-right: 1rem;
+		padding: 0;
+	}
+
 	#about-us .container img {
 		height: 620px;
-		margin: 4rem 0 0 6rem;
 	}
 
 	#about-us .container .content .green-line {
