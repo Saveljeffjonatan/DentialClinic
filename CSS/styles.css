@@ -1,9 +1,7 @@
 /*
 TODO: Kolla så all befintlig design är rätt i storlek med desing skissen.
 TODO: Logo ska vara klick bar och reloada till hem.
-TODO: Ändra #about-us .container .content (.test - till ett bättre namn).
 TODO: Fråga Joakim om "h2, :is(article, aside, nav, section) h1 {" - Varför stylas den som en h2?
-TODO: Margin top hela container på about-us.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
@@ -215,11 +213,68 @@ img {
 
 /** About-us ends here */
 
-/*! REMOVE THIS LATER WHEN STARTING services. */
+/** Services starts here */
+
 #services {
-	background: #000;
-	padding-top: 30px;
+	background: #f7f7f7;
 }
+
+#services .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#services .container .content {
+	text-align: center;
+	margin: 6rem auto;
+}
+
+#services .container .content .green-line {
+	height: 0.25rem;
+	width: 50vh;
+	margin: 0 auto;
+	background-color: #25e6c8;
+}
+
+#services .container .content h1 {
+	font-size: 1.875rem;
+	margin-bottom: 0.5rem;
+}
+
+#services .container .content p {
+	margin: 2rem 1rem;
+}
+
+#services .container .content .list img {
+	display: flex;
+	margin: auto;
+	height: 3.75rem;
+	width: 3.75rem;
+}
+
+#services .container .content .list .service-card {
+	background: #ffffff;
+	margin: 0.6rem;
+}
+
+#services .container .content .list .service-card .image-box {
+	display: flex;
+	margin: 2rem auto;
+	width: 7.5rem;
+	height: 7.5rem;
+	border-radius: 4rem;
+	background: #25e6c8;
+}
+
+#services .container .content .list .service-card .image-box:hover {
+	background: #2baaec;
+}
+
+#services .container .content .list {
+	margin-top: 2rem;
+}
+
+/** Services ends here */
 
 /*! End of specific id /to/ class changes */
 
@@ -257,6 +312,19 @@ img {
 	#about-us .container .content {
 		margin: 3rem 0;
 	}
+
+	/** Services 2 per row */
+
+	#services .container .content .list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 3rem;
+	}
+
+	#services .container .content .list .service-card {
+		flex-grow: 1;
+		width: 50%;
+	}
 }
 
 @media (min-width: 992px) {
@@ -264,6 +332,7 @@ img {
 		max-width: 960px;
 	}
 
+	/** Showcase */
 	#showcase .container img {
 		display: flex;
 		height: 425px;
@@ -282,6 +351,7 @@ img {
 		margin: 2.5rem 0;
 	}
 
+	/** About-us */
 	#about-us .container img {
 		display: none;
 	}
@@ -292,6 +362,11 @@ img {
 
 	#about-us .container .content {
 		margin: 4rem 0;
+	}
+
+	/** Services 3 per row*/
+	#services .container .content .list .service-card {
+		width: 31.5%;
 	}
 }
 
