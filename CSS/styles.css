@@ -46,6 +46,14 @@ h1 {
 	font-family: 'Roboto Slab', serif;
 	color: #363636;
 	font-weight: 400;
+	font-size: 2rem;
+}
+
+h2 {
+	font-family: 'Roboto Slab', serif;
+	color: #363636;
+	font-weight: 300;
+	font-size: 1.875rem;
 }
 
 img {
@@ -68,17 +76,12 @@ img {
 	width: 100%;
 	padding: 0 1rem;
 	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 .collapse {
 	display: none;
-}
-
-.top-menu .container,
-.main-menu .container,
-#about-us .container {
-	display: flex;
-	justify-content: space-between;
 }
 
 /** End of help classes */
@@ -170,11 +173,6 @@ img {
 	background: #dedede;
 }
 
-#showcase .container {
-	display: flex;
-	justify-content: space-between;
-}
-
 #showcase .container .content {
 	margin: 1rem 0;
 }
@@ -183,7 +181,6 @@ img {
 	line-height: 1.1;
 	margin-top: 0.4rem;
 	/*! Deviated from the design by -10px.  */
-	font-size: 2rem;
 }
 
 #showcase .container .content p {
@@ -201,14 +198,9 @@ img {
 	margin-top: auto;
 }
 
-#about-us .container .content h1 {
+#about-us .meta-info {
 	/*! Deviated from the design by -10px.  */
 	font-size: 1.875rem;
-}
-
-#about-us .container .content .info-count h1 {
-	font-size: 1.875rem;
-	color: #2baaec;
 }
 
 /** About-us ends here */
@@ -219,11 +211,6 @@ img {
 	background: #f7f7f7;
 }
 
-#services .container {
-	display: flex;
-	justify-content: space-between;
-}
-
 #services .container .content {
 	text-align: center;
 	margin: 6rem auto;
@@ -231,7 +218,7 @@ img {
 
 #services .container .content .green-line {
 	height: 0.25rem;
-	width: 50vh;
+	width: 350px;
 	margin: 0 auto;
 	background-color: #25e6c8;
 }
@@ -252,11 +239,6 @@ img {
 	width: 3.75rem;
 }
 
-#services .container .content .list .service-card {
-	background: #ffffff;
-	margin: 0.6rem;
-}
-
 #services .container .content .list .service-card .image-box {
 	display: flex;
 	margin: 2rem auto;
@@ -266,12 +248,27 @@ img {
 	background: #25e6c8;
 }
 
-#services .container .content .list .service-card .image-box:hover {
+#services .container .content .list .service-card:hover {
+}
+
+#services .container .content .list .service-card:hover .image-box {
 	background: #2baaec;
 }
 
-#services .container .content .list {
-	margin-top: 2rem;
+#services .list {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+}
+
+#services .service-card {
+	flex-grow: 1;
+	width: 31.5%;
+	min-width: 350px;
+	margin: 0.6rem;
+	background: #ffffff;
+	border-radius: 0.625rem;
 }
 
 /** Services ends here */
@@ -312,19 +309,6 @@ img {
 	#about-us .container .content {
 		margin: 3rem 0;
 	}
-
-	/** Services 2 per row */
-
-	#services .container .content .list {
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: 3rem;
-	}
-
-	#services .container .content .list .service-card {
-		flex-grow: 1;
-		width: 50%;
-	}
 }
 
 @media (min-width: 992px) {
@@ -356,17 +340,12 @@ img {
 		display: none;
 	}
 
-	#about-us .container .content .info .info-count {
+	#about-us .info-count {
 		width: 85%;
 	}
 
 	#about-us .container .content {
 		margin: 4rem 0;
-	}
-
-	/** Services 3 per row*/
-	#services .container .content .list .service-card {
-		width: 31.5%;
 	}
 }
 
@@ -383,10 +362,6 @@ img {
 	#showcase .container .content {
 		align-self: center;
 		margin: 3rem 0 0 6rem;
-	}
-
-	#showcase .container .content p {
-		margin: 2.5rem 0;
 	}
 
 	#showcase .container .content h1 {
