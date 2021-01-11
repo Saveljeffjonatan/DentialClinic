@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
+    <!--? This link helps with loadtime of googlefonts, not nessecary for this project but a cool feature. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Dential Clinic</title>
+</head>
+<body>
+
+    <!--* Start of my top menu -->
+  <nav class="top-menu collapse">
+    <div class="container">
+
+      <div class="open-time">
+        <i class="far fa-clock"></i> Working hours: Monday - Friday: 9:00 - 18:00
+      </div>
+
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+  </nav>
+    <!--* End of my top menu-->
+
+    <!--* Start of my main menu -->
+  <nav class="main-menu">
+    <div class="container">
+
+        <div class="logo">
+          <img src="images/logo.svg" alt="Logo for company">
+        </div>
+
+        <button class="main-menu-mobile">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse">
+          <div class="main-menu-nav">
+            <a href="#" class="main-menu-link">Home</a>
+            <a href="#" class="main-menu-link">About Us</a>
+            <a href="#" class="main-menu-link">Services</a>
+            <a href="#" class="main-menu-link">Contact</a>
+          </div>
+        </div>
+
+    </div>
+  </nav>
+    <!--* End of my main menu -->
+
+    <!--* Start of my showcase -->
+  <section id="showcase">
+    <div class="container">
+
+        <img src="images/placeholder1.svg" alt="">
+
+      <div class="content">
+
+        <h1>Modern technologies ensure safety</h1>
+
+        <p>
+          Our clinic is equipped with the highest quality medical and dental equipment,
+          which allows for quick and effective treatment of the patient.
+        </p>
+
+        <button class="btn btn-primary">About our clinic</button>
+      </div>
+
+
+    </div>
+  </section>
+    <!--* End of my showcase  -->
+
+    <!--* Start of my about-us -->
+  <section id="about-us">
+    <div class="container">
+      <div class="content">
+
+        <h2>Dential<span class="blue">Clinic</span> is a modern <br> medical and dental clinic</h2>
+
+        <div class="green-line"></div>
+
+        <br>
+        <p>
+          The DentialClinic Center located in the city of Stockholm is one of the most modern dentistry centers in Sweden.
+          It was created for demanding patients who expect the highest quality of services combined with comfort and a pleasant atmosphere.
+          <br><br>
+          The highest-class dental equipment possessed by the DentialClinic Center enables complicated procedures to be carried out.
+          In our dental practice we combine passion, technology and quality. We strive to fulfill your dreams of a wonderful smile.
+        </p>
+        <br>
+
+      <div class="info">
+        <div class="info-count patients">
+          <p class="meta-info blue">9850</p>
+          <p>Happy patients</p>
+        </div>
+
+        <div class="info-count">
+          <p class="meta-info blue">12 890</p>
+          <p>Performed treatments</p>
+        </div>
+
+        <div class="info-count">
+          <p class="meta-info blue">24/7</å>
+          <p>Open clinic</p>
+        </div>
+      </div>
+
+      </div>
+
+      <img src="images/placeholder2.svg" alt="">
+
+    </div>
+  </section>
+
+    <!--* End of my about-us -->
+
+    <!--* Start of my Services -->
+
+    <section id="services">
+      <div class="container">
+        <div class="content">
+
+          <h1>Our services</h1>
+          <div class="green-line"></div>
+
+        <ol class="list">
+          <div class="service-card">
+
+            <div class="image-box">
+            <img src="IMAGES/services1.svg" alt=""> 
+           </div>
+
+            <p class="p-large">Tooth inspection</p>
+            <p>
+              Comprehensive review of the mouth
+              and detection of broken teeth
+              and other threats.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="image-box">
+            <img src="IMAGES/services2.svg" alt=""> 
+            </div>
+            <p class="p-large">Tooth removal</p>
+              <p>
+              Any broken tooth is a threat to the body,
+              so this danger should be removed
+              from the mouth.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="image-box">
+            <img src="IMAGES/services3.svg" alt=""> 
+            </div>
+            <p class="p-large">Removal of tartar</p>
+              <p>
+              Tartar is the enemy of every human being, 
+              because through his presence we have unpleasant breath.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="image-box">
+            <img src="IMAGES/services4.svg" alt=""> 
+            </div>
+            <p class="p-large">Polishing and cleaning</p>
+            <p>
+              A simple and safe polishing treatment improves the health of teeth that
+              will get a better look.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="image-box">
+            <img src="IMAGES/services5.svg" alt=""> 
+            </div>
+            <p class="p-large">Dental implants</p>
+            <p>
+              The best solution when you can not save
+              a healthy tooth and you need to apply artificial solutions.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="image-box">
+            <img src="IMAGES/services6.svg" alt=""> 
+            </div>
+            <p class="p-large">Effective protection</p>
+              <p>
+              The cheapest tooth protection
+              is their cleaning and a regular
+              visit to the dentist.
+            </p>
+          </div>
+          
+        </ol>
+
+        </div>
+      </div>
+    </section>
+    <!--* End of my Services -->
+
+    <!--* Start of my appointment and footer -->
+    <section id="appointment">
+      <div class="container">
+        <div class="content">
+          <h2>Do not wait and make an appointment today!</h2>
+          <button class="btn btn-secondary">Book an appointment</button>
+        </div>
+        
+      </div>
+
+    </section>
+
+    <footer>
+      <p>© 2020 DentialClinic</p>
+    </footer>
+
+
+
+</body>
+</html>
